@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon-32x32.png">
+  <title>Article preview component</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-[#ecf2f8] h-screen">
+  <div class="py-16 sm:px-[22rem] sm:mt-52 sm:py-0">
+    <div class="rounded-lg sm:rounded-none bg-white mx-6 sm:flex sm:mx-0">
+      <div class="min-w-[19rem]">
+        <img class="rounded-tl-lg sm:w-[18.4rem] rounded-tr-lg sm:rounded-tr-none sm:rounded-l-lg sm:object-left sm:h-[18rem] sm:object-cover" src="./public/images/drawers.jpg" alt="drawers">
+      </div>
+      <div class="mt-8 sm:mt-0 sm:pt-8 sm:pl-0">
+        <div class="px-8">
+          <p class="font-semibold opacity-70 sm:text-xl">Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home</p>
+          <p class="font-medium opacity-50 text-[13.3px] mt-4 leading-5 sm:mb-1">Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I've got some simple tips 
+          to help you make any room feel complete.</p>
+        </div>
+        <div id="user-container" class="flex items-center mt-4 h-[80px] justify-between rounded-b-lg sm:mt-0 sm:rounded-none">
+          <div id="user-detail" class="flex items-center py-5 px-8">
+            <img class="w-10 h-10 rounded-full" src="./public/images/avatar-michelle.jpg" alt="Michelle">
+            <div class="ml-4 w-[11.5rem] sm:w-[17rem]">
+              <p class="font-semibold text-[13px] opacity-70">Michelle Appleton</p>
+              <p class="font-medium text-[13px] opacity-35">28 Jun 2020</p>
+            </div>
+            <!-- MOBILE SHARE BUTTON -->
+            <div onclick="shareButtonHandler()" tabindex="0" class="p-2 z-10 sm:hidden bg-[#ecf2f8] rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+              </svg>
+            </div>
+            <!-- DESKTOP SHARE BUTTON -->
+            <div class="hidden sm:block relative">
+              <div id="icon-container" tabindex="0" data-tooltip-target="tooltip-click" data-tooltip-trigger="click" class="p-2 z-10 bg-[#ecf2f8] focus:bg-[#6d7f97] rounded-full">
+                <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                  <path id="icon-path" fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+                </svg>
+              </div>
+              <div id="tooltip-click" role="tooltip" class="absolute z-10 invisible inline-block px-8 py-4 text-sm font-medium !transform !translate-y-[-4rem] !translate-x-[-104px] shadow-2xl w-max bg-[#48556a] rounded-lg opacity-0 tooltip ">
+                <div class="none sm:flex bg-[#48556a]">
+                  <p class="text-[#9eafc2] font-medium tracking-[0.3rem] uppercase text-[13.5px]">Share</p>
+                  <div class="flex items-center ml-4">
+                    <img src="./public/images/icon-facebook.svg" alt="icon-facebook">
+                    <img class="mx-4" src="./public/images/icon-twitter.svg" alt="icon-twitter">
+                    <img src="./public/images/icon-pinterest.svg" alt="icon-pinterest">
+                  </div>
+                </div>
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+          </div>
+          <!-- MOBILE SHARE CONTAINER -->
+          <div id="share-container" class="hidden py-6 px-8 sm:hidden items-center justify-between w-[20.5rem]">
+            <div class="flex sm:hidden">
+              <p class="text-[#9eafc2] font-medium tracking-[0.3rem] uppercase text-[13.5px]">Share</p>
+              <div class="flex items-center ml-4">
+                <img src="./public/images/icon-facebook.svg" alt="icon-facebook">
+                <img class="mx-4" src="./public/images/icon-twitter.svg" alt="icon-twitter">
+                <img src="./public/images/icon-pinterest.svg" alt="icon-pinterest">
+              </div>
+            </div>
+            <div onclick="shareButtonHandler()" tabindex="0" class="p-2 z-10 bg-[#6d7f97] rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path fill="#fff" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./src/shareBtnHandler.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>

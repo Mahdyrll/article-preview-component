@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'medium';
+        src: url('../public/fonts/Manrope/static/Manrope-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: 'regular';
+        src: url('../public/fonts/Manrope/static/Manrope-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'semibold';
+        src: url('../public/fonts/Manrope/static/Manrope-SemiBold.ttf');
+    }
+}
+
+@layer components {
+    .user-bg {
+        @apply bg-[#48556a]
+    }
+}
