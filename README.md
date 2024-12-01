@@ -20,8 +20,8 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/article-preview-component-using-js-and-tailwind-n6qQTlVphi)
+- Live Site URL: (https://mahdyrll.github.io/article-preview-component/)
 
 ## My process
 
@@ -42,4 +42,4 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Mahdyrll](https://www.frontendmentor.io/profile/Mahdyrll)
